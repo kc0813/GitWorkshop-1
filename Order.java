@@ -11,7 +11,8 @@ class Order {
 
     public void addChickenNuggets(){
         totalCost += 5;
-        System.out.println("Added some chicken nuggets " + totalCost);
+        System.out.println("Added some chicken nuggets\n Total: " + totalCost);
+        items.add("Chicken Nuggets");
     }
 
 }
