@@ -30,6 +30,8 @@ public class Main
                     order.addChickenNuggets();
                     break;
             }
+
+            scanner.close();
         }
     }
 }
