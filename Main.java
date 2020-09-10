@@ -6,6 +6,7 @@ public class Main
         System.out.println("*** Welcome to Chick-Fil-A ***");
         int option = 1;
         Order order = new Order();
+        Scanner scanner = new Scanner(System.in);
 
         while (option != 0) {
             System.out.println("");
@@ -18,7 +19,6 @@ public class Main
             System.out.println("0. Done");
             System.out.print("Select an option: ");
 
-            Scanner scanner = new Scanner(System.in);
             option = scanner.nextInt();
 
             switch (option) {
@@ -30,8 +30,7 @@ public class Main
                     order.addChickenNuggets();
                     break;
             }
-
-            scanner.close();
         }
+        scanner.close();
     }
 }
